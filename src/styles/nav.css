@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+}
+
+.nav-list li {
+    font-size: 1.5rem;
+    padding: 10px 100px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-list li:hover {
+    background-color: #bfc2bd96;
+    cursor: pointer;
+    border-radius: 5px;
+}

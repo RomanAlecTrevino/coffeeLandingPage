@@ -1,0 +1,28 @@
+@import url(./styles/nav.css);
+@import url(./styles/welcome.css);
+@import url(./styles/menu.css);
+@import url(./styles/coffee.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url("coffee-photos/Coffee-Landing-Card.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.site-card {
+    background-color: #e9ede7d5;
+    height: 90vh;
+    width: 95vw;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+}

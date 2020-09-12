@@ -1,5 +1,6 @@
+import { siteCard } from "../index";
+
 export const menu = () => {
-    const siteCard = document.querySelector('.site-card');
     const menuItems = [
         {
             name: 'coffee',

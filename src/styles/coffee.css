@@ -1,0 +1,9 @@
+.coffee-div {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.coffee-div h2 {
+    text-align: center;
+}

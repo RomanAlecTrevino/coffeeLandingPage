@@ -1,5 +1,6 @@
+import { siteCard } from "../index";
+
 export const renderWelcome = () => {
-    const siteCard = document.querySelector('.site-card');
     const titleDiv = document.createElement('div');
     titleDiv.classList.add('title-div');
     titleDiv.classList.add('page-container');

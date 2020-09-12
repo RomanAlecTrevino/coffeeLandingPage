@@ -1,6 +1,6 @@
-export const coffee = () => {
-    const siteCard = document.querySelector('.site-card');
+import { siteCard } from "../index";
 
+export const coffee = () => {
     const coffeeList = [
         {
             name: 'Corsica',
@@ -41,7 +41,7 @@ export const coffee = () => {
         coffeeItemDiv.classList.add('coffee-item-div');
 
         const coffeeProductImage = document.createElement('img');
-        coffeeProductImage.src = `./coffee-photos/colombe-${index}.png`;
+        coffeeProductImage.src = `../src/coffee-photos/colombe-${index}.png`;
 
         const coffeeItemName = document.createElement('h3');
         coffeeItemName.classList.add('coffee-item-name');
@@ -66,8 +66,7 @@ export const coffee = () => {
         coffeeItemDiv.appendChild(coffeeItemPrice);
 
         productList.appendChild(coffeeItemDiv);
-    })
-    
+    });
     coffeeDivTitle.appendChild(productList);
     coffeeDiv.appendChild(coffeeDivTitle);
     siteCard.appendChild(coffeeDiv);
