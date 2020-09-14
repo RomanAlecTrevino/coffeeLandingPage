@@ -1,0 +1,23 @@
+.why-us-div {
+    width: 80%;
+    margin-left: 8rem;
+}
+
+.why-us-title {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.why-us-info {
+    letter-spacing: 1px;
+    font-weight: 150;
+}
+
+.why-us-signature {
+    text-align: end;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}

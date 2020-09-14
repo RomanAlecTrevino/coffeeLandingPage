@@ -2,6 +2,7 @@ import "./main.css";
 import { renderWelcome } from "./pages/welcome";
 import { menu } from "./pages/menu";
 import { coffee } from "./pages/coffee";
+import { whyUs } from "./pages/why-us";
 
 export const siteCard = document.querySelector('.site-card');
 
@@ -31,6 +32,7 @@ renderWelcome();
 /* ---------- TABS ---------- */
 const switchTab = (event) => {
     const item = event.target;
+    const itemID = item.id;
 
     // Guard Clause
     if(!item.classList.contains('nav-link')) return;
@@ -38,13 +40,15 @@ const switchTab = (event) => {
     const pageContainer = document.querySelector('.page-container');
     siteCard.removeChild(pageContainer); 
 
-    if(item.id === 'Menu') {
+    if(itemID === 'Menu') {
         menu();
-    } else if(item.id === 'Home') {
+    } else if(itemID === 'Home') {
         renderWelcome();
-    } else if(item.id === 'Coffee') {
+    } else if(itemID === 'Coffee') {
         coffee();
-    }
+    } else if(itemID === 'Why Us?') {
+        whyUs();
+    } 
 }
 
 window.addEventListener('click', switchTab);

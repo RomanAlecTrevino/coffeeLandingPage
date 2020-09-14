@@ -2,6 +2,7 @@
 @import url(./styles/welcome.css);
 @import url(./styles/menu.css);
 @import url(./styles/coffee.css);
+@import url(./styles/why-us.css);
 
 * {
     margin: 0;
@@ -25,4 +26,5 @@ body {
     margin: auto;
     margin-top: 2rem;
     border-radius: 10px;
+    box-shadow: 0px 3px 15px 5px rgba(0,0,0,0.4);
 }

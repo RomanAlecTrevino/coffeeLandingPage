@@ -20,5 +20,5 @@ A coffeeshop website rendered entirely in JS using Webpack
 * [x] Create coffee.js
     * [x] Link photos with Webpack
     * [x] Add page to index.js
-    * [] Style coffee.css
-* [] Create contact.js
+    * [x] Style coffee.css
+* [x] Create contact.js

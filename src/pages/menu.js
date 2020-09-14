@@ -3,7 +3,7 @@ import { siteCard } from "../index";
 export const menu = () => {
     const menuItems = [
         {
-            name: 'coffee',
+            name: 'Coffee',
             items: [
                 {
                     name: 'coffee',
@@ -20,7 +20,7 @@ export const menu = () => {
             ]
         }, 
         {
-            name: 'pastries',
+            name: 'Pastries',
             items: [
                 {
                     name: 'scone',
@@ -37,7 +37,7 @@ export const menu = () => {
             ]
         },
         {
-            name: 'sandwiches',
+            name: 'Sandwiches',
             items: [
                 {
                     name: 'ham',
