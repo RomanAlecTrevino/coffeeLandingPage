@@ -6,25 +6,37 @@ export const coffee = () => {
             name: 'Corsica',
             roast: 'Dark Roast',
             description: 'Baker\'s Chocolate, Red Wine, Spices',
-            price: '$13'
+            price: 13
         },
         {
             name: 'Nizza',
             roast: 'Medium Roast',
             description: 'Milk Chocolate, Nuts, Brownie',
-            price: '$13'
+            price: 13
         },
         {
             name: 'Monaco',
             roast: 'Dark Roast',
             description: 'Currant, Caramel Apple, Malt',
-            price: '$14'
+            price: 14
         },
         {
             name: 'Eduador',
             roast: 'Light Roast',
             description: 'Winesap Apple, Honeydew, Barbados Sugar',
-            price: '$16'
+            price: 16
+        },
+        {
+            name: 'Lyon',
+            roast: 'Medium Roast',
+            description: 'Caramel, Brownie, Toffee',
+            price: 14
+        }, 
+        {
+            name: 'Louisiane',
+            roast: 'Dark Roast',
+            description: 'Black Pepper, Green Pepper, Spices',
+            price: 14
         }
     ];
 
@@ -36,6 +48,7 @@ export const coffee = () => {
     coffeeDivTitle.innerText = 'Coffee';
 
     const productList = document.createElement('ul');
+    productList.classList.add('coffee-grid');
     coffeeList.forEach((item, index) => {
         const coffeeItemDiv = document.createElement('div');
         coffeeItemDiv.classList.add('coffee-item-div');
@@ -57,7 +70,7 @@ export const coffee = () => {
 
         const coffeeItemPrice = document.createElement('h4');
         coffeeItemPrice.classList.add('coffee-item-price');
-        coffeeItemPrice.innerText = item.price;
+        coffeeItemPrice.innerText = '$' + item.price;
 
         coffeeItemDiv.appendChild(coffeeProductImage);
         coffeeItemDiv.appendChild(coffeeItemName);
@@ -67,7 +80,7 @@ export const coffee = () => {
 
         productList.appendChild(coffeeItemDiv);
     });
-    coffeeDivTitle.appendChild(productList);
     coffeeDiv.appendChild(coffeeDivTitle);
+    coffeeDiv.appendChild(productList);
     siteCard.appendChild(coffeeDiv);
 }
