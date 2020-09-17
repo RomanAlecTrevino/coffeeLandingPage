@@ -8,15 +8,19 @@
 .item-div {
     display: block;
     height: 70%;
+    width: 500px;
     align-items: center;
     justify-content: space-around;
+    border-right: 0.5px solid rgba(0, 0, 0, 0.377);
 }
 
 .item-title {
+    font-family: Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    font-size: 1.8rem;
+    letter-spacing: 5px;
+    font-size: 2rem;
     padding-bottom: 50px;
 }
 
@@ -25,9 +29,11 @@
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.377);
+    /* border-bottom: 0.5px solid rgba(0, 0, 0, 0.377); */
 }
 
 .sub-item-name p {
     font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
 }
